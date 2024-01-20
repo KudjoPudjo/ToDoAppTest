@@ -1,3 +1,5 @@
+# Версия Node v18.18.0 Версия Yarn 1.22.19
+# Сначала устанавливаете зависимости yarn i и запускаете yarn start
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
