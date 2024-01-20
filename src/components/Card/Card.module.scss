@@ -1,0 +1,50 @@
+.label{
+  margin: 8px;
+}
+.header{
+  display: flex;
+
+  flex-direction: column;
+  @media (min-width: 750px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.status{
+  margin-top: 0px;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 8px;
+  margin-left: 4px;
+}
+.body{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+.new{
+  background: rgba(201,201,201,0.42);
+}
+.inProgress{
+  background: rgba(5,201,18,0.42);
+}
+.finished{
+  background:rgba(13,46,161,0.42);
+}
+.delete{
+  position: relative;
+  animation: delete 2s ease-in-out infinite;
+}
+
+@keyframes delete {
+    0%{
+      left: 0px;
+    }
+    60%{
+      position: absolute;
+    }
+    100%{
+      left: -150%;
+    }
+}
